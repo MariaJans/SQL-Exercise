@@ -42,5 +42,16 @@ FROM companies
 INNER JOIN employees
 ON companies.name = employees.Company AND employees.Role = "Graphic Designer"
 
+SELECT name, max (Points) FROM students
+
+SELECT avg(Points) FROM students
+
+SELECT count() FROM students WHERE Points = 500
+
+SELECT name FROM students WHERE name like "%s%"
+
+SELECT * FROM students ORDER by Points DESC
+
+
 
 
