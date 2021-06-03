@@ -27,7 +27,20 @@ WHERE id = 4
 
 DELETE FROM students WHERE id = 4
 
+SELECT employees.Name, companies.Name, companies.Date
+FROM employees
+INNER JOIN companies
+ON companies.Name = employees.Company
 
+SELECT employees.Name
+FROM employees
+INNER JOIN companies 
+ON companies.name = employees.Company AND companies.Date<2000
+
+SELECT companies.Name
+FROM companies
+INNER JOIN employees
+ON companies.name = employees.Company AND employees.Role = "Graphic Designer"
 
 
 
